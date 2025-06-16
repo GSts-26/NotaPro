@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color: #F5F5F5;
+}
+
+label {
+    font-family: 'Poppins';
+}
+
+.barraSuperior {
+    background-color: antiquewhite;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.usuario {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    gap: 3px;
+    left: 1200px;
+}
+
+.admin {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconbartop {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 1000px;
+}
+
+.titleSistem {
+    font-size: 40px;
+}
+
+.contenedorGestionEstudiante {
+    display: flex;
+    max-width: max-content;
+    flex-direction: column;
+    position: relative;
+    gap: 12px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 580;
+    max-width: max-content;
+}
+
+.subtitle {
+    font-size: 16px;
+    opacity: 70%;
+    max-width: max-content;
+}
+
+.buscadorEstudiante {
+    max-width: max-content;
+    height: 42px;
+}
+
+.buscar_Estudiante {
+    display: flex;
+    position: relative;
+    font-family: 'Poppins';
+    font-size: 20px;
+    width: 683px;
+    height: 40px;
+    border-radius: 18px;
+    border: 1px;
+    outline: none;
+    align-items: center;
+    padding-left: 40px;
+    opacity: 70%;
+    font-weight: 300;
+}
+
+
+.lupa {
+    display: flex;
+    position: relative;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-35px);
+    pointer-events: none;
+}
+
+.Recientes {
+    font-size: 20px;
+    font-weight: 550;
+    max-width: max-content;
+}
+
+.titulos_Lista_Estudiantes {
+    display: flex;
+    max-width: max-content;
+    position: relative;
+    top: 20px;
+    gap: 165px;
+    color: #383838;
+    font-size: 15px;
+    opacity: 70%;
+    left: 25px;
+    padding-bottom: 30px;
+}
+
+.titles_facultad_Tipo_sangre_Estudiante {
+    display: flex;
+    position: relative;
+    gap: 125px;
+}
+.listado_Estudiantes {
+    display: flex;
+    position: relative;
+    top: 25px;
+    max-width: 683px;
+    height: 87px;
+    min-height: 87px;
+    background-color: #fff;
+    border-radius: 14px;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+.imgEstudiantes {
+    display: flex;
+    gap:10px;
+    position: relative;
+}
+
+.imgEstudiante {
+    position: relative;
+    top: 15px;
+
+}
+
+.nombre_correo_Estudiante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 70%;
+    gap: 10px;
+}
+
+
+.nombre_Estudiante {
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 100%;
+}
+
+.facultad_Tipo_sangre_Estudiante {
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    opacity: 70%;
+    width: 350px;
+}
+
+
+.contenedor-principal-estudiante{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    .DivContenidoEstudiante{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: auto;
+        position: relative;
+        height: 700px;
+        width: 700px;
+    }
+}
+
+/* ANIMACIONES */
+@keyframes zoomInFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.listado_Estudiantes {
+    animation: zoomInFade 0.4s ease-out forwards;
+    animation-delay: var(--delay, 0s);
+    opacity: 0;
+}
+
+
+
+/* Disenio de el formulario de agregar un nuevo profesor */
+.divEstudiante{
+    height: 569px;
+}
+.formNuevoEstudiante {
+    height: 569px;
+    width: 407px;
+    background-color: #ffff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.title_nuevo_Estudiante {
+    color: #383838;
+    font-size: 28px;
+    font-weight: bolder;
+    position: relative;
+    left: 15px;
+    top: 5px;
+}
+
+.subtitle_nuevo_Estudiante {
+    font-size: 14px;
+    position: relative;
+    color: #383838;
+    left: 15px;
+    opacity: 70%;
+}
+
+.cedulaEstudiante {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15px;
+    gap: 5px;
+}
+
+.inputCedulaEstudiante {
+    display: flex;
+    position: relative;
+    width: 361px;
+    height: 43px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    color: #383838;
+    opacity: 70%;
+}
+
+.nombreEstudiante {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15px;
+    gap: 5px;
+}
+
+.inputNombreEstudiante {
+    display: flex;
+    position: relative;
+    width: 361px;
+    height: 43px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    color: #383838;
+    opacity: 70%;
+}
+
+.generoEstudiante {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15px;
+    gap: 5px;
+}
+
+.genero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15px;
+    gap: 5px;
+}
+
+.comboGeneroEstudiante {
+    display: flex;
+    position: relative;
+    width: 179px;
+    height: 43px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    color: #383838;
+    opacity: 70%;
+}
+
+.facultad_Estudiante {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15px;
+    gap: 5px;
+}
+
+.comboFacultad_Estudiante {
+    display: flex;
+    position: relative;
+    width: 361px;
+    height: 43px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    color: #383838;
+    opacity: 70%;
+}
+
+.tipo_sangre_Estudiante {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15px;
+    gap: 5px;
+}
+
+.comboTipo_sangre_Estudiante {
+    display: flex;
+    position: relative;
+    width: 361px;
+    height: 43px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    color: #383838;
+    opacity: 70%;
+}
+
+.botonNuevoEstudiante {
+    background-color: #383838;
+    border: none;
+    border-radius: 12px ;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 44px;
+    position: relative;
+    bottom: 6px;
+}

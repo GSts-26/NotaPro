@@ -18,9 +18,9 @@ public class database {
         }
 
         HikariConfig config = new HikariConfig();
-        config.setJdbcUrl("jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres");
-        config.setUsername("postgres.hsttkxatvhpimlrlwgdz");
-        config.setPassword("Uni_2610261026");
+        config.setJdbcUrl("jdbc:postgresql://aws-0-us-west-1.pooler.supabase.com:5432/postgres?sslmode=require");
+        config.setUsername("postgres.isrgkeshkkxizxukbnfq");
+        config.setPassword("Uni_2610261026"); // tu contraseña real
         config.addDataSourceProperty("cachePrepStmts", "true");
         config.addDataSourceProperty("prepStmtCacheSize", "250");
         config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");

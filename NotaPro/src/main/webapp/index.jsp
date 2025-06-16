@@ -22,7 +22,7 @@
 
         <body>
             <div class="login">
-                <form  class="formulario" method="post" action="auth?accion=login"">
+                <form  class="formulario" method="post" action="auth?accion=login">
                     <h3>Inicia sesión</h3>
                     <div class="input">
                         <span>Usuario</span>
