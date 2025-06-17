@@ -8,7 +8,7 @@
 <%@page import="java.util.Optional"%>
 <%@page import="controlador.AuthController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="user" class="modelos.Usuario" scope="request">
+<jsp:useBean id="user" class="modelos.bean.Usuario" scope="request">
     <jsp:setProperty name="user" property="*"/>
 </jsp:useBean>
 
@@ -19,14 +19,14 @@
     response.setHeader("Expires", "0");
 
     String accion = request.getParameter("accion");
-
     if (accion == null || accion.trim().isEmpty()) {
         response.sendRedirect(request.getContextPath() + "/");
         return;
     }
 
     try {
-        AuthController servicio = new AuthController();
+        AutntrohController servicio = new AuthController();
+        
         switch (accion) {
         
             case "salir":
