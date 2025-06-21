@@ -69,7 +69,7 @@ label {
 .buscar_Estudiante {
     display: flex;
     position: relative;
-    font-family: 'Poppins';
+    font-family: inherit;
     font-size: 20px;
     width: 683px;
     height: 40px;
@@ -117,6 +117,7 @@ label {
     position: relative;
     gap: 125px;
 }
+
 .listado_Estudiantes {
     display: flex;
     position: relative;
@@ -132,7 +133,7 @@ label {
 
 .imgEstudiantes {
     display: flex;
-    gap:10px;
+    gap: 10px;
     position: relative;
 }
 
@@ -162,15 +163,19 @@ label {
     align-items: center;
     gap: 160px;
     opacity: 70%;
-    width: 350px;
+}
+
+.cedula-estudiante {
+    display: none;
 }
 
 
-.contenedor-principal-estudiante{
+.contenedor-principal-estudiante {
     display: flex;
     justify-content: space-between;
     padding-right: 30px;
-    .DivContenidoEstudiante{
+
+    .DivContenidoEstudiante {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -178,6 +183,23 @@ label {
         position: relative;
         height: 700px;
         width: 700px;
+    }
+}
+.delete-alumno{
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+    button{
+        display: flex;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        height: 50px;
+        width:50px;
+        image{
+            width: 70px;
+            height: 70px;
+        }
     }
 }
 
@@ -200,11 +222,11 @@ label {
 }
 
 
-
 /* Disenio de el formulario de agregar un nuevo profesor */
-.divEstudiante{
+.divEstudiante {
     height: 569px;
 }
+
 .formNuevoEstudiante {
     height: 569px;
     width: 407px;
@@ -241,7 +263,7 @@ label {
     gap: 5px;
 }
 
-.inputCedulaEstudiante {
+.cedula_alumno {
     display: flex;
     position: relative;
     width: 361px;
@@ -264,7 +286,7 @@ label {
     gap: 5px;
 }
 
-.inputNombreEstudiante {
+.nombre_alumno{
     display: flex;
     position: relative;
     width: 361px;
@@ -295,7 +317,7 @@ label {
     gap: 5px;
 }
 
-.comboGeneroEstudiante {
+.genero_alumno {
     display: flex;
     position: relative;
     width: 179px;
@@ -318,7 +340,7 @@ label {
     gap: 5px;
 }
 
-.comboFacultad_Estudiante {
+.facultad_alumno {
     display: flex;
     position: relative;
     width: 361px;
@@ -341,7 +363,7 @@ label {
     gap: 5px;
 }
 
-.comboTipo_sangre_Estudiante {
+.tipo_sangre_alumno {
     display: flex;
     position: relative;
     width: 361px;
@@ -359,11 +381,12 @@ label {
 .botonNuevoEstudiante {
     background-color: #383838;
     border: none;
-    border-radius: 12px ;
+    border-radius: 12px;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
     height: 44px;
     position: relative;
     bottom: 6px;
+    cursor: pointer;
 }

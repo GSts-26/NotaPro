@@ -13,6 +13,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/admin.css" />
         <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/newAlumno.css"/>
+        <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/confirmacion-Eliminar.css">
+        <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/mensaje_alumno_agregado.css">
+        <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/mensaje_alumno_eliminado.css">
         <title>NotaPro</title>
     </head>
 
@@ -74,3 +77,4 @@
 
         <main class="main">
 
+    </body>
