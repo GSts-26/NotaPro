@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F6F6F6;
+    color: #383838;
+    overflow: hidden;
+}
+
+.top-bar {
+    grid-area: top-bar;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main {
+    grid-area: main;
+}
+
+.div-contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.btn-alumno-profile {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-alumno-profile img {
+    height: 45px;
+    width: 45px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 100%;
+}
+
+.btn-alumno-profile:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra en la imagen */
+}
+
+
+
+
+
+.user-notify {
+    justify-content: right;
+    display: flex;
+    gap: 10px;
+
+    div {
+        display: grid;
+
+        .spn-alumn {
+            font-size: 16px;
+            font-weight: 600;
+            opacity: 70%;
+        }
+
+        .top-bar-nombre_alumno {
+            font-size: 13px;
+            font-weight: 400;
+            opacity: 70%;
+        }
+    }
+}
+
+.div-left-bar {
+    grid-area: nav-left-bar;
+    display: grid;
+    height: 90vh;
+    width: max-content;
+    background-color: white;
+    border-radius: 20px;
+
+
+    .nav-left-bar {
+        display: grid;
+        padding: 10px;
+    }
+
+    .menu-principal {
+        display: flex;
+        padding: 7px;
+        gap: 200px;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.grid-contenedor {
+    display: grid;
+    gap: 1.5rem;
+    height: 100vh;
+    grid-template:
+        "top-bar top-bar top-bar" auto
+        "nav-left-bar main main" 1fr / 4.5rem 1fr;
+}
+
+.divbarraLateral {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    max-width: max-content;
+    gap: 200px;
+    height: 859px;
+    width: 71px;
+    position: relative;
+    left: 5px;
+}
+
+.divbarraLateral img {
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+
+.divbarraLateral .divMenu {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.divbarraLateral .divMenu img {
+    width: 55px;
+}
+
+.divbarraLateral .divSalir {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 190px;
+}
+
+.divbarraLateral .divSalir img {
+    width: 55px;
+}
+
+/* Título y subtítulo principal */
+.divTitle_subtitle {
+    display: flex;
+    flex-direction: column;
+    color: #383838;
+    max-height: max-content;
+    max-width: max-content;
+}
+
+.divTitle_subtitle .spanTitle {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.divTitle_subtitle .spanSubTitle {
+    font-size: 16px;
+    opacity: 70%;
+    width: 413px;
+}
+
+/* Bloque de contenido académico */
+.divContenidoAcademico {
+    display: flex;
+    flex-direction: column;
+    height: 679px;
+    width: 982px;
+    background-color: white;
+    border-radius: 23px;
+    position: absolute;
+    top: 210px;
+    left: 100px;
+    gap: 25px;
+}
+
+.divbarraBuscar {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    width: 926px;
+    height: 64px;
+    position: relative;
+    left: 26px;
+    top: 15px;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 96% 50%, 100% 100%, 100% 100%, 0 100%);
+    border-radius: 15px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.divbarraBuscar img {
+    width: 55px;
+    height: 55px;
+}
+
+.divbarraBuscar span {
+    font-size: 19px;
+    align-content: center;
+    font-weight: 600;
+}
+
+.divInputBuscar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divInputBuscar input {
+    height: 38px;
+    width: 382px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #383838;
+    padding-right: 40px;
+    padding-left: 10px;
+    font-family: inherit;
+}
+
+.divInputBuscar img {
+    position: absolute;
+    right: 35px;
+    height: 24px;
+    pointer-events: none;
+}
+
+/* Área de conocimiento */
+.divAreaConocimiento {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+    padding-left: 27px;
+}
+
+.divAreaConocimiento select {
+    width: 402px;
+    height: 43px;
+    border-radius: 12px;
+    background-color: #F5F5F5;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: #AFADAD;
+}
+
+/* Grid de áreas de conocimiento */
+.divContenidoAreas {
+    display: grid;
+    height: 475px;
+    width: 926px;
+    position: relative;
+    left: 27px;
+    gap: 15px;
+    grid-template-columns: repeat(3, 3fr);
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+/* Scroll personalizado */
+.divContenidoAreas::-webkit-scrollbar {
+    width: 12px;
+}
+
+.divContenidoAreas::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+.divContenidoAreas::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.divContenidoAreas::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Tarjeta de información de cada área */
+.divInfoarea {
+    display: flex;
+    height: 221px;
+    width: 284px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.divInfoarea .titleArea {
+    display: flex;
+    justify-content: center;
+}
+
+.divInfoarea span.title {
+    font-size: 22px;
+    opacity: 80%;
+}
+
+.divInfoarea .divDocente {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10px;
+}
+
+.divInfoarea .divDocente span.titleDocente {
+    font-size: 18px;
+    opacity: 100%;
+}
+
+.divInfoarea .divDocente span {
+    font-weight: 400;
+    opacity: 70%;
+}
+
+.divInfoarea .divCalificacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.divInfoarea .divCalificacion span {
+    font-size: 18px;
+    opacity: 80%;
+}
+
+.divInfoarea .divCalificacion div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+}
+
+.divInfoarea .divCalificacion div img.nota {
+    height: 55px;
+}
+
+.divInfoarea .divCalificacion div img.info {
+    height: 22px;
+}
+
+.divInfoarea .divCalificacion div span {
+    color: green;
+    font-size: 16px;
+}
+
+.divInfoarea .divCalificacion div span.text {
+    font-size: 12px;
+}
+
+
+/*Estilos del dialog para ver la informacion personal de cada alumnoo*/
+
+
+.divInformacionEstudiante {
+    display: flex;
+    flex-direction: column;
+    width: 564px;
+    height: 697px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+
+    img {
+        height: 36px;
+        width: 36px;
+    }
+
+    .encabezado {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .divtitle-subtitle {
+        display: grid;
+        gap: 5px;
+        padding-left: 10px;
+        padding-top: 10px;
+
+        span.title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #383838;
+        }
+
+        span.subtitle {
+            color: #383838;
+            opacity: 70%
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 564px;
+        height: 697px;
+    }
+}
+
+.btnCerrar {
+    height: max-content;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+.cedula_nombre {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+
+    input {
+        height: 43px;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+    }
+
+    .cedula {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+
+        input {
+            width: 159px;
+
+        }
+    }
+
+    .nombre {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 361px;
+
+        }
+    }
+}
+
+.genero_sangre {
+    display: flex;
+    gap: 20px;
+    padding-left: 10px;
+    padding-top: 30px;
+
+    input {
+        height: 43px;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+    }
+
+    .genero {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 245px;
+        }
+    }
+
+    .sangre {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 96px;
+        }
+    }
+}
+
+.correo_usuario_clave {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 30px;
+    gap: 30px;
+
+    input {
+        width: 361px;
+        height: 43px;
+        border: #DFDFDF 1px solid;
+        outline: none;
+        border-radius: 12px;
+        font-size: 16px;
+        background-color: #F5F5F5;
+        color: #383838;
+        padding-left: 20px;
+        padding-right: 20px;
+
+
+    }
+
+    .correo, .clave, .usuario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input:hover {
+        border: #3C3D37 1px solid;
+        background-color: #F2F2F2;
+    }
+}
+
+.botonActualizar {
+    display: flex;
+    justify-content: space-around;
+
+    button {
+        width: 366px;
+        height: 44px;
+        border: none;
+        border-radius: 12px;
+        background-color: #8DB596;
+        font-size: 18px;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color: #8DB596;
+        opacity: 80%;
+        cursor: pointer;
+    }
+}
+
+
+/*dialog de la informacion del estudiante*/
+
+
+.dialog-info-alumno {
+    border: none;
+    width: 564px;
+    height: 697px;
+    padding: 9px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 55%; /* ajusta esto para moverlo más arriba o más abajo */
+    left: 82%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+

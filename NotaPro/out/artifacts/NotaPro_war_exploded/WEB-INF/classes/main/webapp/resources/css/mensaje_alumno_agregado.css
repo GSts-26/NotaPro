@@ -1,0 +1,35 @@
+
+dialog{
+    border: none;
+    border-radius: 15px;
+    position: fixed;
+    top: 10%; /* ajusta esto para moverlo más arriba o más abajo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    font-family: inherit;
+    outline: none;
+    height: max-content;
+}
+
+.contenido-alumno-agregado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    border-radius: 15px;
+    img{
+        width: 60px;
+        height: 60px;
+    }
+    span{
+        opacity: 80%;
+    }
+}
+
+
+

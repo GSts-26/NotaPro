@@ -7,7 +7,7 @@ import java.sql.Connection;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import modelos.Facultad;
+import modelos.Bean.Facultad;
 import db.database;
 
 public class FacultadController {

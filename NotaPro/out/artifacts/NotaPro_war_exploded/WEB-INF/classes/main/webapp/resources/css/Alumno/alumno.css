@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #F6F6F6;
+    color: #383838;
+    overflow: hidden;
+}
+.user-notify {
+    justify-content: right;
+    display: flex;
+    gap: 10px;
+    div{
+        display: grid;
+        .spn-alumn{
+            font-size: 16px;
+            font-weight: 600;
+            opacity: 70%;
+        }
+        .top-bar-nombre_alumno{
+            font-size: 13px;
+            font-weight: 400;
+            opacity: 70%;
+
+        }
+
+    }
+
+
+}

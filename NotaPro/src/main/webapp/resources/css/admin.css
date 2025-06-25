@@ -268,7 +268,6 @@ span, label {
 .main {
     background-color: #F5F5F5;
     padding-left: 10px;
-    min-height: 100vh;
 
     .header {
         display: flex;

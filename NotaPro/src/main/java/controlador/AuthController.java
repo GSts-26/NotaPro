@@ -11,7 +11,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.Optional;
-import modelos.Usuario;
+import modelos.Bean.Usuario;
 
 /**
  *
@@ -24,7 +24,6 @@ public class AuthController {
 
         try (Connection conn = database.getInstancia().getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
-
             pstmt.setString(1, usuario.getNombre());
             pstmt.setString(2, usuario.getContrasena()); 
             pstmt.setString(3, usuario.getTipoUsuario().name());
